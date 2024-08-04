@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <div class="nav-links">
+                    <i class="fa fa-times" aria-hidden="true" onclick="closeMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="displayMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </header>
+        <section class="about-us">
+            <div class="row">
+                <div class="about-us-col">
+                    <h1>We are the world's largest university</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum quia ad exercitationem a
+                        explicabo vel quo impedit non dignissimos amet suscipit debitis dolore quam, ipsum facere
+                        eligendi sapiente.
+                    </p>
+                    <a href="" class=" hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-us-col">
+                    <img src="img/about.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <h4>About Us</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam natus quo quos eum hic reiciendis fugit
+                magnam sequi <br>numquam expedita molestiae, voluptate explicabo nobis consequatur. Fugiat debitis
+                architecto
+                eius corporis.
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Make with <i class="fa fa-heart-o"></i> By Krynohope </p>
+        </footer>
+    </div>
+    <script>
+        const menu = document.querySelector('.nav-links')
+        const closeMenu = () => {
+            menu.style.right = '-200px'
+        }
+        const displayMenu = () => {
+            menu.style.right = '0'
+        }
+    </script>
+</body>
+
+</html>
